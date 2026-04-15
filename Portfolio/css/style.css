@@ -103,3 +103,31 @@ img {
     display: flex;
   }
 }
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: left;
+}
+
+.skills-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 1.3rem;
+}
+
+.card,
+.project-card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  transition: 0.25s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.card:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
