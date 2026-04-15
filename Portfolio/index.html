@@ -1,68 +1,50 @@
 <!DOCTYPE html>
-<meta charset = "UTF-8">
 <html>
-
 <head>
-   <link rel="stylesheet" href="css/indexStyle.css">
+    <meta charset = "UTF-8">
+   <link rel="stylesheet" href="css/style.css">
    <link rel="icon" href="har.ico">
-<title> 
-Home | Damien Hill
-</title>
-<div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="resume.html">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact Me</a>
-</div>
-
-
-<div class="name-box">
-    Damien Hill
-</div>
-
-<hr>
-
-<p1>
-    This is my coding portfolio where I will be showcasing my skills and projects in various programming languages.<br> I have a passion for coding and am constantly learning and improving my skills. I hope to use this portfolio to demonstrate my abilities and share my work with others.
-    I've been coding for a while now and have experience with a variety of programming languages, including Python, Lua, HTML, and CSS.<br> I am always looking for new challenges and opportunities to learn and grow as a developer. I am excited to share my work and connect with others in the coding community through this portfolio.
-</p1>
-
-<hr>
-
-<div class="experi-box">
-    Skills and Experience
-</div>
-
-<div class="skill-boxes">
-    <div class="skill-box">
-        <h2>Python</h2>
-        <p>I have a years worth of Python knowledge that I will put to good use in the future that I want!</p>
-    </div>
-
-    <div class="skill-box">
-        <h2>Lua</h2>
-        <p>I have experience with Lua and its applications in game development and scripting.</p>
-    </div>
-
-    <div class="skill-box">
-        <h2>HTML & CSS</h2>
-        <p>I have a very good grip on HTML now and will continue to get better with it so I can create visually appealing websites.
-            <br>
-            I have a good understanding of CSS and its applications in web design and development.
-        </p>
-    </div>
-</div>
+   <title> Home | Damien Hill</title>
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+      
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="resume.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-
+  <main id="main">
+    <section class="main container">
+        <div class = "main grid">
+            <div class="main-text">
+                <h1> Hi, I'm Damien Hill</h1>
+                <br>
+                <p class="basicinfo">I'm working on honing my skills in all coding languages like Lua, HTML, CSS, and More!</p>
+            </div>
+        </div>
+    </section>
+ 
+  <section class="container">
+    <h2>Skills and Experiences</h2>
+    <div class="skills-grid">
+        <article class="card">
+            <h3>Layout Design</h3>
+            <p>HTML and CSS coding experience and constantly improving my skills in this area.</p>
+        </article>
+    </div>
+  </section>
+ </main>
 </body>
-
-<hr>
-<p>
-    © Damien Hill
-</p>
-
 </html>

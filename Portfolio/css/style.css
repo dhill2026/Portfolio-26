@@ -1,0 +1,105 @@
+:root {
+  --primary-color: rgb(29, 29, 29);
+  --accent-color: rgb(58, 58, 58);
+  --text: rgb(255, 255, 255);
+  --bg: rgb(29, 29, 29);
+  --card: rgb(32, 32, 32);
+  --radius: 8px;
+  --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(var(--primary-color), var(--accent-color));
+  text-align: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid white;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 16px;
+  transition: 0.3s;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  background: var(--accent-color);
+  transform: translateY(6px);
+  box-shadow: 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    background: rgba(10, 15, 30, 0.85);
+    padding: 1rem;
+    border-radius: 10px;
+    flex-direction: column;
+    display: none;
+  }
+
+
+  .nav-toggle:checked ~ .site-nav .nav-list {
+    display: flex;
+  }
+}
