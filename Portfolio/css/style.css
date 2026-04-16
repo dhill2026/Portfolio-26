@@ -111,6 +111,24 @@ img {
   align-items: left;
 }
 
+.main-image {
+  width: 50%;
+  border-radius: var(--radius);
+}
+
+.contact-me-form {
+  display: grid;
+  gap: 1.5rem;
+}
+.contact-me-form input,
+.contact-me-form textarea {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 0.7rem;
+  color: rgb(255, 255, 255);
+}
+
 .skills-grid,
 .project-grid {
   display: grid;
@@ -122,6 +140,7 @@ img {
 .project-card {
   background: var(--card);
   padding: 1rem;
+  cursor: pointer;
   border-radius: var(--radius);
   transition: 0.25s;
   box-shadow: 0 5px 20px rgba(0,0,0,0.4);
@@ -129,5 +148,23 @@ img {
 .card:hover,
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary {
+  background: linear-gradient(90deg, var(--primary-color), #a1a1a1);
+  color: white;
+}
+.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--accent-color);
 }
 
